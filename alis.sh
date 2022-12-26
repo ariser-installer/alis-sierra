@@ -1746,7 +1746,7 @@ function packages() {
 function provision() {
     print_step "provision()"
 
-    (cd "$PROVISION_DIRECTORY" && cp -vr --parents . "${MNT_DIR}")
+    (cd "$PROVISION_DIRECTORY" && cp -pvr --parents . "${MNT_DIR}")
 }
 
 function vagrant() {
