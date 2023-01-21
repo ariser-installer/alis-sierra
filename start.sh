@@ -25,7 +25,17 @@ echo "################################################################"
 echo
 chmod +x *.sh
 echo "################################################################"
-echo "Starting alis.sh"
+echo "Shall we start the alis script"
+echo
+echo "Answer with y/Y or n/N"
 echo "################################################################"
 echo
-./alis.sh -w
+read response
+if [[ "$response" == [yY] ]]; then
+    /alis/alis.sh -w
+else
+    echo "################################################################"
+    echo "We did not start the alis script"
+    echo "################################################################"
+fi
+
