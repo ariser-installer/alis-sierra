@@ -23,7 +23,10 @@ echo "################################################################"
 echo "Making all .sh files executable"
 echo "################################################################"
 echo
-chmod +x *.sh
+chmod +x /alis/*.sh
+chmod +x /alis/configs/*.sh
+chmod +x /alis/configz/*.sh
+echo
 echo "################################################################"
 echo "Shall we start the alis script"
 echo
