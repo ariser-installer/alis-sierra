@@ -156,7 +156,6 @@ function facts_commons() {
         VMWARE="true"
     fi
 
-    echo $VIRTUALBOX "   ERIK"
     if [ "$VIRTUALBOX" != "true" ] && [ "$VMWARE" != "true" ]; then
         if [ "$CPU_VENDOR" == "intel" ]; then
             INITRD_MICROCODE="intel-ucode.img"
